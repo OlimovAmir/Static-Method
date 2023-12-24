@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Static_Method
+﻿namespace Static_Method
 {
     internal class Counter
     {
@@ -17,8 +11,12 @@ namespace Static_Method
 		public static int CounterProperty
 		{
 			get { return counter; }
-			set { counter = value; }
+            private 	set { counter = value; }
 		}
 
+        public static int GetCounted()
+        {
+            return counter;
+        }
 	}
 }

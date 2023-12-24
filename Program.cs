@@ -52,6 +52,8 @@ class Program
         Static_Method.Counter counter2= new Static_Method.Counter();
         Static_Method.Counter counter3= new Static_Method.Counter();
         Console.WriteLine(Static_Method.Counter.CounterProperty);
+
+        Console.WriteLine(Static_Method.Counter.GetCounted());
         
     }
 }
